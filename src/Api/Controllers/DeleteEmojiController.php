@@ -7,6 +7,7 @@ use TheTurk\Flamoji\Commands\DeleteEmoji;
 use Illuminate\Contracts\Bus\Dispatcher;
 use Illuminate\Support\Arr;
 use Psr\Http\Message\ServerRequestInterface;
+use Flarum\Http\RequestUtil;
 
 class DeleteEmojiController extends AbstractDeleteController
 {
@@ -29,7 +30,7 @@ class DeleteEmojiController extends AbstractDeleteController
     protected function delete(ServerRequestInterface $request)
     {
         $this->bus->dispatch(
-            new DeleteEmoji(Arr::get($request->getQueryParams(), 'id'))
+            new DeleteEmoji(Arr::get($request->getQueryParams(), 'id'), RequestUtil::getActor($request))
         );
     }
 }

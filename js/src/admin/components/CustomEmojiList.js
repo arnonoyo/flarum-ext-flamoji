@@ -3,16 +3,19 @@ import Component from 'flarum/common/Component';
 import EditEmojiModal from './EditEmojiModal';
 import LoadingIndicator from 'flarum/common/components/LoadingIndicator';
 import urlChecker from '../../common/utils/urlChecker';
+import CustomEmojiListState from '../states/CustomEmojiListState';
 
 export default class CustomEmojiList extends Component {
   oninit(vnode) {
     super.oninit(vnode);
+    this.category = this.attrs.category;
+    this.customEmojiListState = new CustomEmojiListState();
 
-    app.customEmojiListState.loadResults();
+    this.customEmojiListState.loadResults(this.category);
   }
 
   view() {
-    const state = app.customEmojiListState;
+    const state = this.customEmojiListState;
 
     return (
       <div className="customEmoji-list">

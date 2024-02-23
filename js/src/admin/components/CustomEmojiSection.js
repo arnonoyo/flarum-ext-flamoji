@@ -9,6 +9,7 @@ import ItemList from 'flarum/common/utils/ItemList';
 export default class CustomEmojiSection extends Component {
   oninit(vnode) {
     super.oninit(vnode);
+    this.categories = Object.keys(this.attrs.categories) || [];
   }
 
   exportEmojiList() {
@@ -98,9 +99,17 @@ export default class CustomEmojiSection extends Component {
             </div>
           </div>
         </div>
-        <div className="container">
-          <CustomEmojiList />
-        </div>
+        {
+          this.categories.map((category) => {
+            return (
+              <div className="container">
+                <h2>{category ? category : "无分类"}</h2>
+                <CustomEmojiList 
+                  category = {category}/>
+              </div>
+            )
+          })
+        }
       </div>
     );
   }

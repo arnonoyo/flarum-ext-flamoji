@@ -1,29 +1,28 @@
 {
-    "name": "the-turk/flarum-flamoji",
-    "description": "Simple emoji manager for Flarum.",
+    "name": "tk/flarum-ext-flamoji",
+    "description": "自定义表情包",
     "keywords": [
       "flarum",
-      "emoji",
-      "picker"
+      "emoji"
     ],
     "type": "flarum-extension",
     "license": "MIT",
     "authors": [
       {
-        "name": "Hasan Özbey",
-        "email": "hasanoozbey@gmail.com",
-        "homepage": "https://github.com/the-turk"
+        "name": "tk",
+        "homepage": "https://github.com/arnonoyo/flarum-ext-flamoji/"
       }
     ],
     "support": {
-      "issues": "https://github.com/the-turk/flarum-flamoji/issues",
-      "source": "https://github.com/the-turk/flarum-flamoji"
+      "issues": "https://github.com/arnonoyo/flarum-ext-flamoji/issues",
+      "source": "https://github.com/arnonoyo/flarum-ext-flamoji/"
     },
     "require": {
       "flarum/core": "^1.0.2"
     },
     "conflict": {
-      "clarkwinkelmann/flarum-ext-emojionearea": "*"
+      "clarkwinkelmann/flarum-ext-emojionearea": "*",
+      "the-turk/flarum-flamoji": "*"
     },
     "autoload": {
       "psr-4": {
@@ -32,7 +31,7 @@
     },
     "extra": {
       "flarum-extension": {
-        "title": "Flamoji",
+        "title": "自定义表情包",
         "category": "feature",
         "icon": {
           "name": "far fa-smile-wink",

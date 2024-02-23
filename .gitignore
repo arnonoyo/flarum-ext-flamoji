@@ -86,3 +86,10 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+vendor/
+assets/dist/
+# js/dist/
+js/node_modules/
+composer.lock
+# package-lock.json

@@ -9,6 +9,7 @@ use Illuminate\Contracts\Bus\Dispatcher;
 use Illuminate\Support\Arr;
 use Psr\Http\Message\ServerRequestInterface;
 use Tobscure\JsonApi\Document;
+use Flarum\Http\RequestUtil;
 
 class UpdateEmojiController extends AbstractShowController
 {
@@ -35,11 +36,12 @@ class UpdateEmojiController extends AbstractShowController
      */
     protected function data(ServerRequestInterface $request, Document $document)
     {
+        $actor = RequestUtil::getActor($request);
         $id = Arr::get($request->getQueryParams(), 'id');
         $data = Arr::get($request->getParsedBody(), 'data', []);
 
         return $this->bus->dispatch(
-            new EditEmoji($id, $data)
+            new EditEmoji($id, $actor, $data)
         );
     }
 }

@@ -9,6 +9,7 @@ use Illuminate\Contracts\Bus\Dispatcher;
 use Illuminate\Support\Arr;
 use Psr\Http\Message\ServerRequestInterface;
 use Tobscure\JsonApi\Document;
+use Flarum\Http\RequestUtil;
 
 class ImportEmojiController extends AbstractCreateController
 {
@@ -36,7 +37,7 @@ class ImportEmojiController extends AbstractCreateController
     protected function data(ServerRequestInterface $request, Document $document)
     {
         return $this->bus->dispatch(
-            new ImportEmoji(Arr::get($request->getParsedBody(), 'data', []))
+            new ImportEmoji(RequestUtil::getActor($request), Arr::get($request->getParsedBody(), 'data', []))
         );
     }
 }

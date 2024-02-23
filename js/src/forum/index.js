@@ -14,7 +14,7 @@ app.initializers.add(
   'the-turk-flamoji',
   () => {
     // localization of the `emoji-button` package
-    const i18n = {
+    let i18n = {
       search: app.translator.trans(t_p + 'search_placeholder'),
       notFound: app.translator.trans(t_p + 'no_emojis_found_message'),
       categories: {
@@ -44,7 +44,7 @@ app.initializers.add(
       this.isPickerLoading = this.isPickerLoaded = false;
 
       // https://v4.webpack.js.org/guides/public-path/#on-the-fly
-      __webpack_public_path__ = app.forum.attribute('baseUrl') + '/assets/extensions/the-turk-flamoji/dist/';
+      __webpack_public_path__ = app.forum.attribute('baseUrl') + '/assets/extensions/tk-flamoji/dist/';
 
       // dyanmically load translated emoji keyword files
       this.emojiData = (lang) => {
@@ -71,29 +71,72 @@ app.initializers.add(
                     const baseUrl = app.forum.attribute('baseUrl');
 
                     let specifiedCategories = JSON.parse(app.forum.attribute('flamoji.specify_categories'));
-                    let sortingArr = getEmojiCategories();
-
-                    let customEmojis = [];
-                    let customEmojiReplacers = {};
-
-                    response['data'].map((customEmoji) => {
-                      const path = customEmoji['attributes']['path'];
-
-                      customEmojiReplacers[path] = customEmoji['attributes']['text_to_replace'];
-
-                      customEmojis.push({
-                        name: customEmoji['attributes']['title'],
-                        emoji: urlChecker(path) ? path : baseUrl + path,
-                      });
-                    });
+                    let customCategories = JSON.parse(app.forum.attribute('flamoji.custom_categories'));
+                    let emoji_version = app.forum.attribute('flamoji.emoji_version');
 
                     // so if we don't sort `specifiedCategories` array
                     // based on `sortingArr`, some categories are
                     // obviously not working. It seems like a bug
                     // in the `emoji-button` repository.
+                    let sortingArr = getEmojiCategories();
                     specifiedCategories.sort(function (a, b) {
                       return sortingArr.indexOf(a) - sortingArr.indexOf(b);
                     });
+
+                    // 为""会导致默认选中报错
+                    customCategories = customCategories.map(c => c ? c : "无分类");
+
+                    let specifiedCategoryCount = specifiedCategories.length;
+                    let customEmojis = [];
+                    let customEmojiReplacers = {};
+                    response['data'].map((customEmoji) => {
+                      const path = customEmoji['attributes']['path'];
+                      const categoryName = customEmoji['attributes']['category'] ? customEmoji['attributes']['category'] : "无分类";
+                      customEmojiReplacers[path] = customEmoji['attributes']['text_to_replace'];
+
+                      if(customCategories.findIndex(c => c == categoryName) >= 0){
+                        customEmojis.push({
+                          emoji: urlChecker(path) ? path : baseUrl + path,
+                          category: specifiedCategoryCount + customCategories.findIndex(c => c == categoryName),
+                          categoryName,
+                          name: customEmoji['attributes']['title'],
+                          version: emoji_version,
+                          custom: true,
+                        });
+                      }
+                    });
+
+                    // 过滤掉不显示的emoji(emoji.category存的是索引)
+                    let specifiedCategoryIndex = [];
+                    specifiedCategories.map(s => {
+                      if(sortingArr.findIndex(sa => sa == s) >= 0){
+                        specifiedCategoryIndex.push(sortingArr.findIndex(sa => sa == s));
+                      }
+                    })
+
+                    let emojiData = {
+                      emoji : JSON.parse(JSON.stringify(localeData.default.emoji.filter(e => {
+                        return specifiedCategoryIndex.length != 0 && specifiedCategoryIndex.findIndex(s => s == e.category) >= 0;
+                      }))),
+                      categories : specifiedCategories.concat(customCategories)
+                    };
+                    emojiData.emoji = emojiData.emoji.map(e => {
+                      e.category = specifiedCategoryIndex.findIndex(s => s == e.category);
+                      return e;
+                    })
+                    emojiData.emoji = emojiData.emoji.concat(customEmojis);
+
+                    let initialCategory = specifiedCategories.findIndex(s => s == app.forum.attribute('flamoji.initial_category')) >= 0 ? 
+                      app.forum.attribute('flamoji.initial_category') : 
+                      emojiData.categories[0];
+
+                    let icons = {
+                      categories : {}
+                    };
+                    customCategories.map(customCategory => {
+                      icons.categories[customCategory] = customEmojis.find(c => c.categoryName == customCategory)?.emoji;
+                      i18n.categories[customCategory] = customCategory;
+                    })
 
                     import(/* webpackChunkName: "emoji-button" */ '@joeattardi/emoji-button').then(({ EmojiButton }) => {
                       this.picker = new EmojiButton({
@@ -109,10 +152,10 @@ app.initializers.add(
                         showCategoryButtons: app.forum.attribute('flamoji.show_category_buttons'),
                         showSearch: app.forum.attribute('flamoji.show_search'),
                         emojiVersion: app.forum.attribute('flamoji.emoji_version'),
-                        initialCategory: app.forum.attribute('flamoji.initial_category'),
-                        categories: specifiedCategories,
-                        emojiData: localeData.default,
-                        custom: customEmojis,
+                        initialCategory,
+                        categories: emojiData.categories,
+                        emojiData,
+                        icons, 
                         i18n,
                       });
   

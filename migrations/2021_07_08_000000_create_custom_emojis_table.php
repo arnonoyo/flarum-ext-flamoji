@@ -16,6 +16,7 @@ return [
 
                 $table->string('title')->nullable();
                 $table->string('text_to_replace')->nullable();
+                $table->string('category');
                 $table->string('path');
             }
         );

@@ -8,6 +8,7 @@ use TheTurk\Flamoji\Api\Serializers\EmojiSerializer;
 use TheTurk\Flamoji\Models\Emoji;
 use Psr\Http\Message\ServerRequestInterface;
 use Tobscure\JsonApi\Document;
+use Illuminate\Support\Arr;
 
 class ListEmojisController extends AbstractListController
 {
@@ -35,6 +36,7 @@ class ListEmojisController extends AbstractListController
     protected function data(ServerRequestInterface $request, Document $document)
     {
         $params = $request->getQueryParams();
+        $category = Arr::get($params, 'category');
 
         $limit = $this->extractLimit($request);
 
@@ -47,7 +49,7 @@ class ListEmojisController extends AbstractListController
 
         $offset = $this->extractOffset($request);
 
-        $results = Emoji::skip($offset)->take($limit + 1)->orderBy('id', 'desc')->get();
+        $results = Emoji::where('category', $category)->skip($offset)->take($limit + 1)->orderBy('id', 'desc')->get();
 
         // Check for more results
         $hasMoreResults = $limit > 0 && $results->count() > $limit;

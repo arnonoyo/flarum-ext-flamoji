@@ -21,7 +21,8 @@ class EmojiSerializer extends AbstractSerializer
         return [
             'title'            => $model->title,
             'text_to_replace'  => $model->text_to_replace,
-            'path'             => $model->path
+            'path'             => $model->path,
+            'category'         => $model->category,
         ];
     }
 }

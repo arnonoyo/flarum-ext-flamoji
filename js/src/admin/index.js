@@ -3,7 +3,6 @@ import { availableLocale } from '@roderickhsiao/emoji-button-locale-data';
 
 import app from 'flarum/common/app';
 import AdminPage from 'flarum/admin/components/AdminPage';
-import CustomEmojiListState from './states/CustomEmojiListState';
 import CustomEmojiSection from './components/CustomEmojiSection';
 import Emoji from '../common/models/Emoji';
 import ExtensionPage from 'flarum/admin/components/ExtensionPage';
@@ -14,7 +13,6 @@ import Switch from 'flarum/common/components/Switch';
 
 app.initializers.add('the-turk-flamoji', (app) => {
   app.store.models.emojis = Emoji;
-  app.customEmojiListState = new CustomEmojiListState();
 
   let initialCategoryOptions = {};
 
@@ -23,13 +21,10 @@ app.initializers.add('the-turk-flamoji', (app) => {
   });
 
   let emojiDataOptions = {};
-
-  availableLocale.forEach((locale) => {
-    emojiDataOptions[locale] = locale;
-  });
+  emojiDataOptions['zh'] = 'zh';
 
   extend(ExtensionPage.prototype, ['oncreate', 'onupdate'], function () {
-    if (this.extension.id != 'the-turk-flamoji') return;
+    if (this.extension.id != 'tk-flamoji') return;
 
     const $recentsCountSetting = this.$('.recentsCountSetting');
 
@@ -41,28 +36,37 @@ app.initializers.add('the-turk-flamoji', (app) => {
   });
 
   extend(ExtensionPage.prototype, 'oninit', function () {
-    if (this.extension.id != 'the-turk-flamoji') return;
+    if (this.extension.id != 'tk-flamoji') return;
 
     this.specifiedCategories = Stream(JSON.parse(this.setting(['the-turk-flamoji.specify_categories'])() || []))();
+    this.customCategories = Stream(JSON.parse(this.setting(['the-turk-flamoji.custom_categories'])() || []))();
   });
 
   extend(ExtensionPage.prototype, 'sections', function (items) {
-    if (this.extension.id != 'the-turk-flamoji') return;
+    if (this.extension.id != 'tk-flamoji') return;
 
     items.has('permissions') ? items.remove('permissions') : '';
 
-    items.add('customFlamoji', <CustomEmojiSection />);
+    items.add('customFlamoji',
+      <CustomEmojiSection 
+        categories = {this.customCategories}
+      />
+    );
   });
 
   override(AdminPage.prototype, 'dirty', function (original) {
-    if (!this.extension || this.extension.id != 'the-turk-flamoji') return original();
+    if (!this.extension || this.extension.id != 'tk-flamoji') return original();
 
     const dirty = {};
 
     const specifiedCategories = JSON.stringify(this.specifiedCategories);
+    const customCategories = JSON.stringify(this.customCategories);
 
     if (specifiedCategories !== this.setting(['the-turk-flamoji.specify_categories'])()) {
       dirty['the-turk-flamoji.specify_categories'] = specifiedCategories;
+    }
+    if (customCategories !== this.setting(['the-turk-flamoji.custom_categories'])()) {
+      dirty['the-turk-flamoji.custom_categories'] = customCategories;
     }
 
     Object.keys(this.settings).forEach((key) => {
@@ -76,7 +80,7 @@ app.initializers.add('the-turk-flamoji', (app) => {
     return dirty;
   });
 
-  app.extensionData.for('the-turk-flamoji').registerSetting(function () {
+  app.extensionData.for('tk-flamoji').registerSetting(function () {
     return (
       <div className="Flamoji--settingsContainer">
         <div className="Flamoji--generalUISettingsContainer">
@@ -253,6 +257,29 @@ app.initializers.add('the-turk-flamoji', (app) => {
                       />
                       <label for={category}>{app.translator.trans('the-turk-flamoji.admin.settings.emoji_categories.' + category)}</label>
                     </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+          <div className="Flamoji--categorySetting specifyCategoriesSetting">
+            <div className="Form-group specifyCategoriesGroup">
+              <label>{app.translator.trans('the-turk-flamoji.admin.settings.custom_categories_label')}</label>
+              <div className="helpText">{app.translator.trans('the-turk-flamoji.admin.settings.custom_categories_text')}</div>
+              <div className="options">
+                {Object.keys(this.customCategories||{}).map((category) => {
+                  return (
+                    <div className="cat-checkbox">
+                    <input
+                      type="checkbox"
+                      name="customCats[]"
+                      checked={this.customCategories[category] == 1}
+                      onchange={(change) => {
+                        this.customCategories[category] = change.target.checked ? 1 : 0;
+                      }}
+                    />
+                    <label for={category}>{category ? category : "无分类"}</label>
+                  </div>
                   );
                 })}
               </div>

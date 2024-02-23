@@ -18,6 +18,7 @@ export default class EditEmojiModal extends Modal {
     this.emojiTitle = Stream(this.emoji.title() || '');
     this.textToReplace = Stream(this.emoji.textToReplace() || '');
     this.path = Stream(this.emoji.path() || '');
+    this.category = Stream(this.emoji.category() || '');
   }
 
   className() {
@@ -57,12 +58,21 @@ export default class EditEmojiModal extends Modal {
     );
 
     items.add(
+      'category',
+      <div className="Form-group">
+        <label>{app.translator.trans('the-turk-flamoji.admin.custom_emojis_section.edit_emoji.emoji_category')}</label>
+        <input className="FormControl" bidi={this.category} />
+      </div>,
+      40
+    );
+
+    items.add(
       'textToReplace',
       <div className="Form-group">
         <label>{app.translator.trans('the-turk-flamoji.admin.custom_emojis_section.edit_emoji.text_to_replace_label')}</label>
         <input className="FormControl" bidi={this.textToReplace} />
       </div>,
-      40
+      30
     );
 
     items.add(
@@ -71,7 +81,7 @@ export default class EditEmojiModal extends Modal {
         <label>{app.translator.trans('the-turk-flamoji.admin.custom_emojis_section.edit_emoji.path_or_url_label')}</label>
         <input className="FormControl" placeholder="/assets/emojis/batman.png" bidi={this.path} />
       </div>,
-      30
+      20
     );
 
     items.add(
@@ -104,6 +114,7 @@ export default class EditEmojiModal extends Modal {
       title: this.emojiTitle(),
       textToReplace: this.textToReplace(),
       path: this.path(),
+      category: this.category(),
     };
   }
 
@@ -116,9 +127,11 @@ export default class EditEmojiModal extends Modal {
     this.emoji.save(this.submitData()).then((emoji) => {
       this.clearCache().then(() => {
         this.hide();
-        if (!exists) app.customEmojiListState.addToList(emoji);
+        // if (!exists) app.customEmojiListState.addToList(emoji);
+        // 暂时都刷新页面吧
         this.loading = false;
         this.showSuccessMessage();
+        setTimeout(() => window.location.reload(), 500);
       });
     });
   }

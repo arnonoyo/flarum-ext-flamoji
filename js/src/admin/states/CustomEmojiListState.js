@@ -12,12 +12,13 @@ export default class CustomEmojiListState {
   /**
    * Load more custom emojis
    *
+   * @param category 类型
    * @param offset The index to start the page at.
    */
-  loadResults(offset = 0) {
+  loadResults(category , offset = 0) {
     this.loading = true;
 
-    return app.store.find('the-turk/emojis', { page: { limit: 23, offset } }).then(this.parseResults.bind(this));
+    return app.store.find('the-turk/emojis', { page: { limit: 23, offset } , category }).then(this.parseResults.bind(this));
   }
 
   /**
@@ -34,7 +35,7 @@ export default class CustomEmojiListState {
    */
   parseResults(results) {
     this.emojis.push(...results);
-
+    
     this.loading = false;
     this.moreResults = !!results.payload.links && !!results.payload.links.next;
 

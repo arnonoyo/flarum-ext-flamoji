@@ -15,6 +15,7 @@ namespace TheTurk\Flamoji;
 use Flarum\Extend;
 use s9e\TextFormatter\Configurator;
 use TheTurk\Flamoji\Api\Controllers;
+use TheTurk\Flamoji\Listener;
 
 return [
     (new Extend\Frontend('forum'))
@@ -26,6 +27,9 @@ return [
         ->js(__DIR__.'/js/dist/admin.js'),
 
     new Extend\Locales(__DIR__.'/locale'),
+
+    (new Extend\Event())
+        ->subscribe(Listener\SaveEmoji::class),
 
     (new Extend\Formatter)
         ->configure(ConfigureTextFormatter::class),
@@ -49,5 +53,15 @@ return [
         ->serializeToForum('flamoji.show_category_buttons', 'the-turk-flamoji.show_category_buttons', 'boolVal')
         ->serializeToForum('flamoji.show_recents', 'the-turk-flamoji.show_recents', 'boolVal')
         ->serializeToForum('flamoji.recents_count', 'the-turk-flamoji.recents_count', 'intVal')
-        ->serializeToForum('flamoji.specify_categories', 'the-turk-flamoji.specify_categories'),
+        ->serializeToForum('flamoji.specify_categories', 'the-turk-flamoji.specify_categories')
+        ->serializeToForum('flamoji.custom_categories', 'the-turk-flamoji.custom_categories', function ($retrievedValue) {
+            $categories = json_decode($retrievedValue);
+            $res = [];
+            foreach($categories as $key => $value){
+                if($value == 1){
+                    $res[] = $key;
+                }
+            }
+            return json_encode($res);
+        }),
 ];

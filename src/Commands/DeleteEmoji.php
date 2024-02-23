@@ -2,8 +2,17 @@
 
 namespace TheTurk\Flamoji\Commands;
 
+use Flarum\User\User;
+
 class DeleteEmoji
 {
+    /**
+     * The user performing the action.
+     *
+     * @var User
+     */
+    public $actor;
+
     /**
      * The ID of the emoji to delete.
      *
@@ -12,10 +21,12 @@ class DeleteEmoji
     public $emojiId;
 
     /**
-     * @param int $tagId The ID of the emoji to delete.
+     * @param int $emojiId The ID of the emoji to delete.
+     * @param User $actor The user performing the action.
      */
-    public function __construct($tagId)
+    public function __construct($emojiId, User $actor)
     {
-        $this->tagId = $tagId;
+        $this->emojiId = $emojiId;
+        $this->actor = $actor;
     }
 }
