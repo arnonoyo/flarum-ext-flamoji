@@ -571,6 +571,9 @@ flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('the-t
                   categories: emojiData.categories,
                   emojiData: emojiData,
                   icons: icons,
+                  twemojiOptions: {
+                    base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/'
+                  },
                   i18n: i18n
                 });
 

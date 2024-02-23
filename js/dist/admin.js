@@ -869,14 +869,7 @@ flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('the-t
     }, m("label", null, app.translator.trans('the-turk-flamoji.admin.settings.emoji_version_label')), m(flarum_common_components_Select__WEBPACK_IMPORTED_MODULE_7___default.a, {
       value: this.setting(['the-turk-flamoji.emoji_version'])() || '12.1',
       options: {
-        '1.0': '1.0',
-        '2.0': '2.0',
-        '3.0': '3.0',
-        '4.0': '4.0',
-        '5.0': '5.0',
-        '11.0': '11.0',
-        '12.0': '12.0',
-        '12.1': '12.1'
+        '14.0.2': '14.0.2'
       },
       buttonClassName: "Button",
       onchange: this.settings['the-turk-flamoji.emoji_version']

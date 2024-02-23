@@ -156,7 +156,10 @@ app.initializers.add(
                         categories: emojiData.categories,
                         emojiData,
                         icons, 
-                        i18n,
+                        twemojiOptions: {
+                           base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/' 
+                        },
+                        i18n
                       });
   
                       this.picker.on('emoji', (selection) => {

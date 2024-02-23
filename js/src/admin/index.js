@@ -167,14 +167,7 @@ app.initializers.add('the-turk-flamoji', (app) => {
               <Select
                 value={this.setting(['the-turk-flamoji.emoji_version'])() || '12.1'}
                 options={{
-                  '1.0': '1.0',
-                  '2.0': '2.0',
-                  '3.0': '3.0',
-                  '4.0': '4.0',
-                  '5.0': '5.0',
-                  '11.0': '11.0',
-                  '12.0': '12.0',
-                  '12.1': '12.1',
+                  '14.0.2': '14.0.2',
                 }}
                 buttonClassName="Button"
                 onchange={this.settings['the-turk-flamoji.emoji_version']}
