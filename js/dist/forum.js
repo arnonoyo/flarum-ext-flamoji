@@ -1,2 +1,669 @@
-module.exports=function(e){function s(s){for(var o,n,r=s[0],a=s[1],i=0,u=[];i<r.length;i++)n=r[i],Object.prototype.hasOwnProperty.call(t,n)&&t[n]&&u.push(t[n][0]),t[n]=0;for(o in a)Object.prototype.hasOwnProperty.call(a,o)&&(e[o]=a[o]);for(m&&m(s);u.length;)u.shift()()}var o={},t={145:0};function n(s){if(o[s])return o[s].exports;var t=o[s]={i:s,l:!1,exports:{}};return e[s].call(t.exports,t,t.exports,n),t.l=!0,t.exports}n.e=function(e){var s=[],o=t[e];if(0!==o)if(o)s.push(o[2]);else{var r=new Promise((function(s,n){o=t[e]=[s,n]}));s.push(o[2]=r);var a,i=document.createElement("script");i.charset="utf-8",i.timeout=120,n.nc&&i.setAttribute("nonce",n.nc),i.src=function(e){return n.p+""+({0:"emoji-button-message-",1:"vendors~emoji-button-message-af",2:"vendors~emoji-button-message-am",3:"vendors~emoji-button-message-ar",4:"vendors~emoji-button-message-ar-SA",5:"vendors~emoji-button-message-as",6:"vendors~emoji-button-message-ast",7:"vendors~emoji-button-message-az",8:"vendors~emoji-button-message-be",9:"vendors~emoji-button-message-bg",10:"vendors~emoji-button-message-bn",11:"vendors~emoji-button-message-br",12:"vendors~emoji-button-message-bs",13:"vendors~emoji-button-message-ca",14:"vendors~emoji-button-message-ccp",15:"vendors~emoji-button-message-ceb",16:"vendors~emoji-button-message-chr",17:"vendors~emoji-button-message-ckb",18:"vendors~emoji-button-message-cs",19:"vendors~emoji-button-message-cy",20:"vendors~emoji-button-message-da",21:"vendors~emoji-button-message-de",22:"vendors~emoji-button-message-de-CH",23:"vendors~emoji-button-message-doi",24:"vendors~emoji-button-message-el",25:"vendors~emoji-button-message-en",26:"vendors~emoji-button-message-en-001",27:"vendors~emoji-button-message-en-AU",28:"vendors~emoji-button-message-en-CA",29:"vendors~emoji-button-message-en-GB",30:"vendors~emoji-button-message-en-IN",31:"vendors~emoji-button-message-es",32:"vendors~emoji-button-message-es-419",33:"vendors~emoji-button-message-es-MX",34:"vendors~emoji-button-message-es-US",35:"vendors~emoji-button-message-et",36:"vendors~emoji-button-message-eu",37:"vendors~emoji-button-message-fa",38:"vendors~emoji-button-message-fi",39:"vendors~emoji-button-message-fil",40:"vendors~emoji-button-message-fo",41:"vendors~emoji-button-message-fr",42:"vendors~emoji-button-message-fr-CA",43:"vendors~emoji-button-message-ga",44:"vendors~emoji-button-message-gd",45:"vendors~emoji-button-message-gl",46:"vendors~emoji-button-message-gu",47:"vendors~emoji-button-message-ha",48:"vendors~emoji-button-message-ha-NE",49:"vendors~emoji-button-message-he",50:"vendors~emoji-button-message-hi",51:"vendors~emoji-button-message-hr",52:"vendors~emoji-button-message-hu",53:"vendors~emoji-button-message-hy",54:"vendors~emoji-button-message-ia",55:"vendors~emoji-button-message-id",56:"vendors~emoji-button-message-ig",57:"vendors~emoji-button-message-is",58:"vendors~emoji-button-message-it",59:"vendors~emoji-button-message-ja",60:"vendors~emoji-button-message-jv",61:"vendors~emoji-button-message-ka",62:"vendors~emoji-button-message-kab",63:"vendors~emoji-button-message-kk",64:"vendors~emoji-button-message-kl",65:"vendors~emoji-button-message-km",66:"vendors~emoji-button-message-kn",67:"vendors~emoji-button-message-ko",68:"vendors~emoji-button-message-kok",69:"vendors~emoji-button-message-ku",70:"vendors~emoji-button-message-ky",71:"vendors~emoji-button-message-lb",72:"vendors~emoji-button-message-lo",73:"vendors~emoji-button-message-lt",74:"vendors~emoji-button-message-lv",75:"vendors~emoji-button-message-mai",76:"vendors~emoji-button-message-mi",77:"vendors~emoji-button-message-mk",78:"vendors~emoji-button-message-ml",79:"vendors~emoji-button-message-mn",80:"vendors~emoji-button-message-mni",81:"vendors~emoji-button-message-mr",82:"vendors~emoji-button-message-ms",83:"vendors~emoji-button-message-mt",84:"vendors~emoji-button-message-my",85:"vendors~emoji-button-message-ne",86:"vendors~emoji-button-message-nl",87:"vendors~emoji-button-message-nn",88:"vendors~emoji-button-message-no",89:"vendors~emoji-button-message-or",90:"vendors~emoji-button-message-pa",91:"vendors~emoji-button-message-pa-Arab",92:"vendors~emoji-button-message-pcm",93:"vendors~emoji-button-message-pl",94:"vendors~emoji-button-message-ps",95:"vendors~emoji-button-message-pt",96:"vendors~emoji-button-message-pt-PT",97:"vendors~emoji-button-message-qu",98:"vendors~emoji-button-message-rm",99:"vendors~emoji-button-message-ro",100:"vendors~emoji-button-message-root",101:"vendors~emoji-button-message-ru",102:"vendors~emoji-button-message-rw",103:"vendors~emoji-button-message-sa",104:"vendors~emoji-button-message-sat",105:"vendors~emoji-button-message-sd",106:"vendors~emoji-button-message-si",107:"vendors~emoji-button-message-sk",108:"vendors~emoji-button-message-sl",109:"vendors~emoji-button-message-so",110:"vendors~emoji-button-message-sq",111:"vendors~emoji-button-message-sr",112:"vendors~emoji-button-message-sr-Cyrl",113:"vendors~emoji-button-message-sr-Cyrl-BA",114:"vendors~emoji-button-message-sr-Latn",115:"vendors~emoji-button-message-sr-Latn-BA",116:"vendors~emoji-button-message-su",117:"vendors~emoji-button-message-sv",118:"vendors~emoji-button-message-sw",119:"vendors~emoji-button-message-sw-KE",120:"vendors~emoji-button-message-ta",121:"vendors~emoji-button-message-te",122:"vendors~emoji-button-message-tg",123:"vendors~emoji-button-message-th",124:"vendors~emoji-button-message-ti",125:"vendors~emoji-button-message-tk",126:"vendors~emoji-button-message-to",127:"vendors~emoji-button-message-tr",128:"vendors~emoji-button-message-tt",129:"vendors~emoji-button-message-ug",130:"vendors~emoji-button-message-uk",131:"vendors~emoji-button-message-ur",132:"vendors~emoji-button-message-uz",133:"vendors~emoji-button-message-vi",134:"vendors~emoji-button-message-wo",135:"vendors~emoji-button-message-xh",136:"vendors~emoji-button-message-yo",137:"vendors~emoji-button-message-yo-BJ",138:"vendors~emoji-button-message-yue",139:"vendors~emoji-button-message-yue-Hans",140:"vendors~emoji-button-message-zh",141:"vendors~emoji-button-message-zh-Hant",142:"vendors~emoji-button-message-zh-Hant-HK",143:"vendors~emoji-button-message-zu",146:"vendors~emoji-button"}[e]||e)+".js"}(e);var m=new Error;a=function(s){i.onerror=i.onload=null,clearTimeout(u);var o=t[e];if(0!==o){if(o){var n=s&&("load"===s.type?"missing":s.type),r=s&&s.target&&s.target.src;m.message="Loading chunk "+e+" failed.\n("+n+": "+r+")",m.name="ChunkLoadError",m.type=n,m.request=r,o[1](m)}t[e]=void 0}};var u=setTimeout((function(){a({type:"timeout",target:i})}),12e4);i.onerror=i.onload=a,document.head.appendChild(i)}return Promise.all(s)},n.m=e,n.c=o,n.d=function(e,s,o){n.o(e,s)||Object.defineProperty(e,s,{enumerable:!0,get:o})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,s){if(1&s&&(e=n(e)),8&s)return e;if(4&s&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&s&&"string"!=typeof e)for(var t in e)n.d(o,t,function(s){return e[s]}.bind(null,t));return o},n.n=function(e){var s=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(s,"a",s),s},n.o=function(e,s){return Object.prototype.hasOwnProperty.call(e,s)},n.p="",n.oe=function(e){throw console.error(e),e};var r=window.webpackJsonpmodule_exports=window.webpackJsonpmodule_exports||[],a=r.push.bind(r);r.push=s,r=r.slice();for(var i=0;i<r.length;i++)s(r[i]);var m=a;return n(n.s=172)}({0:function(e,s){e.exports=flarum.core.compat["common/app"]},1:function(e,s,o){"use strict";function t(e,s){return(t=Object.setPrototypeOf||function(e,s){return e.__proto__=s,e})(e,s)}function n(e,s){e.prototype=Object.create(s.prototype),e.prototype.constructor=e,t(e,s)}o.d(s,"a",(function(){return n}))},14:function(e,s){e.exports=flarum.core.compat["common/components/Tooltip"]},170:function(e,s,o){var t={"./":[7,0],"./af":[27,1],"./af.js":[27,1],"./am":[28,2],"./am.js":[28,2],"./ar":[30,3],"./ar-SA":[29,4],"./ar-SA.js":[29,4],"./ar.js":[30,3],"./as":[31,5],"./as.js":[31,5],"./ast":[32,6],"./ast.js":[32,6],"./az":[33,7],"./az.js":[33,7],"./be":[34,8],"./be.js":[34,8],"./bg":[35,9],"./bg.js":[35,9],"./bn":[36,10],"./bn.js":[36,10],"./br":[37,11],"./br.js":[37,11],"./bs":[38,12],"./bs.js":[38,12],"./ca":[39,13],"./ca.js":[39,13],"./ccp":[40,14],"./ccp.js":[40,14],"./ceb":[41,15],"./ceb.js":[41,15],"./chr":[42,16],"./chr.js":[42,16],"./ckb":[43,17],"./ckb.js":[43,17],"./cs":[44,18],"./cs.js":[44,18],"./cy":[45,19],"./cy.js":[45,19],"./da":[46,20],"./da.js":[46,20],"./de":[48,21],"./de-CH":[47,22],"./de-CH.js":[47,22],"./de.js":[48,21],"./doi":[49,23],"./doi.js":[49,23],"./el":[50,24],"./el.js":[50,24],"./en":[56,25],"./en-001":[51,26],"./en-001.js":[51,26],"./en-AU":[52,27],"./en-AU.js":[52,27],"./en-CA":[53,28],"./en-CA.js":[53,28],"./en-GB":[54,29],"./en-GB.js":[54,29],"./en-IN":[55,30],"./en-IN.js":[55,30],"./en.js":[56,25],"./es":[60,31],"./es-419":[57,32],"./es-419.js":[57,32],"./es-MX":[58,33],"./es-MX.js":[58,33],"./es-US":[59,34],"./es-US.js":[59,34],"./es.js":[60,31],"./et":[61,35],"./et.js":[61,35],"./eu":[62,36],"./eu.js":[62,36],"./fa":[63,37],"./fa.js":[63,37],"./fi":[64,38],"./fi.js":[64,38],"./fil":[65,39],"./fil.js":[65,39],"./fo":[66,40],"./fo.js":[66,40],"./fr":[68,41],"./fr-CA":[67,42],"./fr-CA.js":[67,42],"./fr.js":[68,41],"./ga":[69,43],"./ga.js":[69,43],"./gd":[70,44],"./gd.js":[70,44],"./gl":[71,45],"./gl.js":[71,45],"./gu":[72,46],"./gu.js":[72,46],"./ha":[74,47],"./ha-NE":[73,48],"./ha-NE.js":[73,48],"./ha.js":[74,47],"./he":[75,49],"./he.js":[75,49],"./hi":[76,50],"./hi.js":[76,50],"./hr":[77,51],"./hr.js":[77,51],"./hu":[78,52],"./hu.js":[78,52],"./hy":[79,53],"./hy.js":[79,53],"./ia":[80,54],"./ia.js":[80,54],"./id":[81,55],"./id.js":[81,55],"./ig":[82,56],"./ig.js":[82,56],"./index":[7,0],"./index.js":[7,0],"./is":[83,57],"./is.js":[83,57],"./it":[84,58],"./it.js":[84,58],"./ja":[85,59],"./ja.js":[85,59],"./jv":[86,60],"./jv.js":[86,60],"./ka":[87,61],"./ka.js":[87,61],"./kab":[88,62],"./kab.js":[88,62],"./kk":[89,63],"./kk.js":[89,63],"./kl":[90,64],"./kl.js":[90,64],"./km":[91,65],"./km.js":[91,65],"./kn":[92,66],"./kn.js":[92,66],"./ko":[93,67],"./ko.js":[93,67],"./kok":[94,68],"./kok.js":[94,68],"./ku":[95,69],"./ku.js":[95,69],"./ky":[96,70],"./ky.js":[96,70],"./lb":[97,71],"./lb.js":[97,71],"./lo":[98,72],"./lo.js":[98,72],"./lt":[99,73],"./lt.js":[99,73],"./lv":[100,74],"./lv.js":[100,74],"./mai":[101,75],"./mai.js":[101,75],"./mi":[102,76],"./mi.js":[102,76],"./mk":[103,77],"./mk.js":[103,77],"./ml":[104,78],"./ml.js":[104,78],"./mn":[105,79],"./mn.js":[105,79],"./mni":[106,80],"./mni.js":[106,80],"./mr":[107,81],"./mr.js":[107,81],"./ms":[108,82],"./ms.js":[108,82],"./mt":[109,83],"./mt.js":[109,83],"./my":[110,84],"./my.js":[110,84],"./ne":[111,85],"./ne.js":[111,85],"./nl":[112,86],"./nl.js":[112,86],"./nn":[113,87],"./nn.js":[113,87],"./no":[114,88],"./no.js":[114,88],"./or":[115,89],"./or.js":[115,89],"./pa":[117,90],"./pa-Arab":[116,91],"./pa-Arab.js":[116,91],"./pa.js":[117,90],"./pcm":[118,92],"./pcm.js":[118,92],"./pl":[119,93],"./pl.js":[119,93],"./ps":[120,94],"./ps.js":[120,94],"./pt":[122,95],"./pt-PT":[121,96],"./pt-PT.js":[121,96],"./pt.js":[122,95],"./qu":[123,97],"./qu.js":[123,97],"./rm":[124,98],"./rm.js":[124,98],"./ro":[125,99],"./ro.js":[125,99],"./root":[126,100],"./root.js":[126,100],"./ru":[127,101],"./ru.js":[127,101],"./rw":[128,102],"./rw.js":[128,102],"./sa":[129,103],"./sa.js":[129,103],"./sat":[130,104],"./sat.js":[130,104],"./sd":[131,105],"./sd.js":[131,105],"./si":[132,106],"./si.js":[132,106],"./sk":[133,107],"./sk.js":[133,107],"./sl":[134,108],"./sl.js":[134,108],"./so":[135,109],"./so.js":[135,109],"./sq":[136,110],"./sq.js":[136,110],"./sr":[141,111],"./sr-Cyrl":[138,112],"./sr-Cyrl-BA":[137,113],"./sr-Cyrl-BA.js":[137,113],"./sr-Cyrl.js":[138,112],"./sr-Latn":[140,114],"./sr-Latn-BA":[139,115],"./sr-Latn-BA.js":[139,115],"./sr-Latn.js":[140,114],"./sr.js":[141,111],"./su":[142,116],"./su.js":[142,116],"./sv":[143,117],"./sv.js":[143,117],"./sw":[145,118],"./sw-KE":[144,119],"./sw-KE.js":[144,119],"./sw.js":[145,118],"./ta":[146,120],"./ta.js":[146,120],"./te":[147,121],"./te.js":[147,121],"./tg":[148,122],"./tg.js":[148,122],"./th":[149,123],"./th.js":[149,123],"./ti":[150,124],"./ti.js":[150,124],"./tk":[151,125],"./tk.js":[151,125],"./to":[152,126],"./to.js":[152,126],"./tr":[153,127],"./tr.js":[153,127],"./tt":[154,128],"./tt.js":[154,128],"./ug":[155,129],"./ug.js":[155,129],"./uk":[156,130],"./uk.js":[156,130],"./ur":[157,131],"./ur.js":[157,131],"./uz":[158,132],"./uz.js":[158,132],"./vi":[159,133],"./vi.js":[159,133],"./wo":[160,134],"./wo.js":[160,134],"./xh":[161,135],"./xh.js":[161,135],"./yo":[163,136],"./yo-BJ":[162,137],"./yo-BJ.js":[162,137],"./yo.js":[163,136],"./yue":[165,138],"./yue-Hans":[164,139],"./yue-Hans.js":[164,139],"./yue.js":[165,138],"./zh":[168,140],"./zh-Hant":[167,141],"./zh-Hant-HK":[166,142],"./zh-Hant-HK.js":[166,142],"./zh-Hant.js":[167,141],"./zh.js":[168,140],"./zu":[169,143],"./zu.js":[169,143]};function n(e){if(!o.o(t,e))return Promise.resolve().then((function(){var s=new Error("Cannot find module '"+e+"'");throw s.code="MODULE_NOT_FOUND",s}));var s=t[e],n=s[0];return o.e(s[1]).then((function(){return o(n)}))}n.keys=function(){return Object.keys(t)},n.id=170,e.exports=n},172:function(e,s,o){"use strict";o.r(s);var t=o(2),n=o(0),r=o.n(n),a=o(6),i=o(1),u=o(3),j=o.n(u),d=o(14),b=o.n(d),c=function(e){function s(){return e.apply(this,arguments)||this}return Object(i.a)(s,e),s.prototype.view=function(s){var o=e.prototype.view.call(this,s),t=this.attrs.tooltipText||o.attrs.title;return delete o.attrs.title,m(b.a,{showOnFocus:!1,text:t},o)},s.initAttrs=function(s){e.initAttrs.call(this,s),s.className="Button Button--icon Button--link Button-flamoji",s.tooltipText=s.title},s}(j.a),g=o(8),v=o.n(g),l=o(4),f="the-turk-flamoji.forum.",p=f+"emoji-button.";r.a.initializers.add("the-turk-flamoji",(function(){var e={search:r.a.translator.trans(p+"search_placeholder"),notFound:r.a.translator.trans(p+"no_emojis_found_message"),categories:{recents:r.a.translator.trans(p+"categories.recents"),smileys:r.a.translator.trans(p+"categories.smileys"),people:r.a.translator.trans(p+"categories.people"),animals:r.a.translator.trans(p+"categories.animals"),food:r.a.translator.trans(p+"categories.food"),activities:r.a.translator.trans(p+"categories.activities"),travel:r.a.translator.trans(p+"categories.travel"),objects:r.a.translator.trans(p+"categories.objects"),symbols:r.a.translator.trans(p+"categories.symbols"),flags:r.a.translator.trans(p+"categories.flags"),custom:r.a.translator.trans(p+"categories.custom")}};Object(t.extend)(v.a.prototype,"oncreate",(function(){this.flamojiButton=document.querySelector(".Button-flamoji"),this.flamojiContainer=document.createElement("div"),this.flamojiContainer.classList.add("ComposerBody-flamojiContainer"),this.flamojiButton.after(this.flamojiContainer)})),Object(t.extend)(v.a.prototype,"oninit",(function(){var e=this;this.isPickerLoading=this.isPickerLoaded=!1,o.p=r.a.forum.attribute("baseUrl")+"/assets/extensions/the-turk-flamoji/dist/",this.emojiData=function(s){return e.isPickerLoading=!0,o(170)("./"+s)}})),Object(t.extend)(v.a.prototype,"toolbarItems",(function(s){var t=this;s.add("flamoji",c.component({onclick:function(){1!=t.isPickerLoading&&(0==t.isPickerLoaded?t.emojiData(r.a.forum.attribute("flamoji.emoji_data")).then((function(s){r.a.request({method:"GET",url:r.a.forum.attribute("apiUrl")+"/the-turk/emojis"}).then((function(n){var i=r.a.forum.attribute("baseUrl"),u=JSON.parse(r.a.forum.attribute("flamoji.specify_categories")),j=Object(a.a)(),d=[],b={};n.data.map((function(e){var s=e.attributes.path;b[s]=e.attributes.text_to_replace,d.push({name:e.attributes.title,emoji:Object(l.a)(s)?s:i+s})})),u.sort((function(e,s){return j.indexOf(e)-j.indexOf(s)})),o.e(146).then(o.bind(null,179)).then((function(o){var n=o.EmojiButton;t.picker=new n({theme:"light",autoFocusSearch:!1,rootElement:t.flamojiContainer,style:r.a.forum.attribute("flamoji.emoji_style"),recentsCount:r.a.forum.attribute("flamoji.recents_count"),showRecents:r.a.forum.attribute("flamoji.show_recents"),showVariants:r.a.forum.attribute("flamoji.show_variants"),autoHide:r.a.forum.attribute("flamoji.auto_hide"),showPreview:r.a.forum.attribute("flamoji.show_preview"),showCategoryButtons:r.a.forum.attribute("flamoji.show_category_buttons"),showSearch:r.a.forum.attribute("flamoji.show_search"),emojiVersion:r.a.forum.attribute("flamoji.emoji_version"),initialCategory:r.a.forum.attribute("flamoji.initial_category"),categories:u,emojiData:s.default,custom:d,i18n:e}),t.picker.on("emoji",(function(e){var s=e.emoji;s||(s=b[e.url.replace(i,"")]),t.attrs.composer.editor.insertAtCursor(s)})),t.isPickerLoaded=!0,t.isPickerLoading=!1,m.redraw(),t.picker.togglePicker(t.flamojiButton)}))}))})):t.picker.togglePicker(t.flamojiButton))},icon:this.isPickerLoading?"fas fa-spinner fa-pulse":"far fa-smile-wink",title:r.a.translator.trans(f+"composer.emoji_tooltip")}))})),Object(t.extend)(v.a.prototype,"toolbarItems",(function(e){e.has("emoji")&&e.remove("emoji")}))}),-150)},2:function(e,s){e.exports=flarum.core.compat["common/extend"]},3:function(e,s){e.exports=flarum.core.compat["common/components/Button"]},4:function(e,s,o){"use strict";function t(e){var s=new RegExp("^(http|https)://","i");return!!e.match(s)}o.d(s,"a",(function(){return t}))},6:function(e,s,o){"use strict";function t(){return["smileys","people","animals","food","activities","travel","objects","symbols","flags"]}o.d(s,"a",(function(){return t}))},8:function(e,s){e.exports=flarum.core.compat["common/components/TextEditor"]}});
+module.exports =
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// install a JSONP callback for chunk loading
+/******/ 	function webpackJsonpCallback(data) {
+/******/ 		var chunkIds = data[0];
+/******/ 		var moreModules = data[1];
+/******/
+/******/
+/******/ 		// add "moreModules" to the modules object,
+/******/ 		// then flag all "chunkIds" as loaded and fire callback
+/******/ 		var moduleId, chunkId, i = 0, resolves = [];
+/******/ 		for(;i < chunkIds.length; i++) {
+/******/ 			chunkId = chunkIds[i];
+/******/ 			if(Object.prototype.hasOwnProperty.call(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 				resolves.push(installedChunks[chunkId][0]);
+/******/ 			}
+/******/ 			installedChunks[chunkId] = 0;
+/******/ 		}
+/******/ 		for(moduleId in moreModules) {
+/******/ 			if(Object.prototype.hasOwnProperty.call(moreModules, moduleId)) {
+/******/ 				modules[moduleId] = moreModules[moduleId];
+/******/ 			}
+/******/ 		}
+/******/ 		if(parentJsonpFunction) parentJsonpFunction(data);
+/******/
+/******/ 		while(resolves.length) {
+/******/ 			resolves.shift()();
+/******/ 		}
+/******/
+/******/ 	};
+/******/
+/******/
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// object to store loaded and loading chunks
+/******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 	// Promise = chunk loading, 0 = chunk loaded
+/******/ 	var installedChunks = {
+/******/ 		"forum": 0
+/******/ 	};
+/******/
+/******/
+/******/
+/******/ 	// script path function
+/******/ 	function jsonpScriptSrc(chunkId) {
+/******/ 		return __webpack_require__.p + "" + ({"vendors~emoji-button":"vendors~emoji-button","vendors~emoji-button-message-zh":"vendors~emoji-button-message-zh"}[chunkId]||chunkId) + ".js"
+/******/ 	}
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/ 	// This file contains only the entry chunk.
+/******/ 	// The chunk loading function for additional chunks
+/******/ 	__webpack_require__.e = function requireEnsure(chunkId) {
+/******/ 		var promises = [];
+/******/
+/******/
+/******/ 		// JSONP chunk loading for javascript
+/******/
+/******/ 		var installedChunkData = installedChunks[chunkId];
+/******/ 		if(installedChunkData !== 0) { // 0 means "already installed".
+/******/
+/******/ 			// a Promise means "currently loading".
+/******/ 			if(installedChunkData) {
+/******/ 				promises.push(installedChunkData[2]);
+/******/ 			} else {
+/******/ 				// setup Promise in chunk cache
+/******/ 				var promise = new Promise(function(resolve, reject) {
+/******/ 					installedChunkData = installedChunks[chunkId] = [resolve, reject];
+/******/ 				});
+/******/ 				promises.push(installedChunkData[2] = promise);
+/******/
+/******/ 				// start chunk loading
+/******/ 				var script = document.createElement('script');
+/******/ 				var onScriptComplete;
+/******/
+/******/ 				script.charset = 'utf-8';
+/******/ 				script.timeout = 120;
+/******/ 				if (__webpack_require__.nc) {
+/******/ 					script.setAttribute("nonce", __webpack_require__.nc);
+/******/ 				}
+/******/ 				script.src = jsonpScriptSrc(chunkId);
+/******/
+/******/ 				// create error before stack unwound to get useful stacktrace later
+/******/ 				var error = new Error();
+/******/ 				onScriptComplete = function (event) {
+/******/ 					// avoid mem leaks in IE.
+/******/ 					script.onerror = script.onload = null;
+/******/ 					clearTimeout(timeout);
+/******/ 					var chunk = installedChunks[chunkId];
+/******/ 					if(chunk !== 0) {
+/******/ 						if(chunk) {
+/******/ 							var errorType = event && (event.type === 'load' ? 'missing' : event.type);
+/******/ 							var realSrc = event && event.target && event.target.src;
+/******/ 							error.message = 'Loading chunk ' + chunkId + ' failed.\n(' + errorType + ': ' + realSrc + ')';
+/******/ 							error.name = 'ChunkLoadError';
+/******/ 							error.type = errorType;
+/******/ 							error.request = realSrc;
+/******/ 							chunk[1](error);
+/******/ 						}
+/******/ 						installedChunks[chunkId] = undefined;
+/******/ 					}
+/******/ 				};
+/******/ 				var timeout = setTimeout(function(){
+/******/ 					onScriptComplete({ type: 'timeout', target: script });
+/******/ 				}, 120000);
+/******/ 				script.onerror = script.onload = onScriptComplete;
+/******/ 				document.head.appendChild(script);
+/******/ 			}
+/******/ 		}
+/******/ 		return Promise.all(promises);
+/******/ 	};
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// on error function for async loading
+/******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
+/******/
+/******/ 	var jsonpArray = window["webpackJsonpmodule_exports"] = window["webpackJsonpmodule_exports"] || [];
+/******/ 	var oldJsonpFunction = jsonpArray.push.bind(jsonpArray);
+/******/ 	jsonpArray.push = webpackJsonpCallback;
+/******/ 	jsonpArray = jsonpArray.slice();
+/******/ 	for(var i = 0; i < jsonpArray.length; i++) webpackJsonpCallback(jsonpArray[i]);
+/******/ 	var parentJsonpFunction = oldJsonpFunction;
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./forum.js");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./forum.js":
+/*!******************!*\
+  !*** ./forum.js ***!
+  \******************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _src_forum__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./src/forum */ "./src/forum/index.js");
+/* empty/unused harmony star reexport */
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _inheritsLoose; });
+/* harmony import */ var _setPrototypeOf_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./setPrototypeOf.js */ "./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js");
+
+function _inheritsLoose(subClass, superClass) {
+  subClass.prototype = Object.create(superClass.prototype);
+  subClass.prototype.constructor = subClass;
+  Object(_setPrototypeOf_js__WEBPACK_IMPORTED_MODULE_0__["default"])(subClass, superClass);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _setPrototypeOf; });
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+/***/ }),
+
+/***/ "./src/common/utils/getEmojiCategories.js":
+/*!************************************************!*\
+  !*** ./src/common/utils/getEmojiCategories.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return getEmojiCategories; });
+// see https://emoji-button.js.org/docs/api#categories
+// for valid categories
+function getEmojiCategories() {
+  return ['smileys', 'people', 'animals', 'food', 'activities', 'travel', 'objects', 'symbols', 'flags'];
+}
+
+/***/ }),
+
+/***/ "./src/common/utils/urlChecker.js":
+/*!****************************************!*\
+  !*** ./src/common/utils/urlChecker.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return urlChecker; });
+// JavaScript way to check if the path starts with http:// or https://
+// We're using a similar thing on the ConfigureTextFormatter.php
+function urlChecker(url) {
+  var regex = new RegExp('^(http|https)://', 'i');
+  if (url.match(regex)) return true;
+  return false;
+}
+
+/***/ }),
+
+/***/ "./src/emoji-button-locale-data/dist lazy recursive ^\\.\\/.*$":
+/*!**************************************************************************!*\
+  !*** ./src/emoji-button-locale-data/dist lazy ^\.\/.*$ namespace object ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var map = {
+	"./zh": [
+		"./src/emoji-button-locale-data/dist/zh.js",
+		"vendors~emoji-button-message-zh"
+	],
+	"./zh.js": [
+		"./src/emoji-button-locale-data/dist/zh.js",
+		"vendors~emoji-button-message-zh"
+	]
+};
+function webpackAsyncContext(req) {
+	if(!__webpack_require__.o(map, req)) {
+		return Promise.resolve().then(function() {
+			var e = new Error("Cannot find module '" + req + "'");
+			e.code = 'MODULE_NOT_FOUND';
+			throw e;
+		});
+	}
+
+	var ids = map[req], id = ids[0];
+	return __webpack_require__.e(ids[1]).then(function() {
+		return __webpack_require__(id);
+	});
+}
+webpackAsyncContext.keys = function webpackAsyncContextKeys() {
+	return Object.keys(map);
+};
+webpackAsyncContext.id = "./src/emoji-button-locale-data/dist lazy recursive ^\\.\\/.*$";
+module.exports = webpackAsyncContext;
+
+/***/ }),
+
+/***/ "./src/forum/components/TextEditorButton.js":
+/*!**************************************************!*\
+  !*** ./src/forum/components/TextEditorButton.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return TextEditorButton; });
+/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
+/* harmony import */ var flarum_common_components_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! flarum/common/components/Button */ "flarum/common/components/Button");
+/* harmony import */ var flarum_common_components_Button__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(flarum_common_components_Button__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var flarum_common_components_Tooltip__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! flarum/common/components/Tooltip */ "flarum/common/components/Tooltip");
+/* harmony import */ var flarum_common_components_Tooltip__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(flarum_common_components_Tooltip__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+/**
+ * The `TextEditorButton` component displays a button suitable for the text
+ * editor toolbar.
+ *
+ * So this class is only here because of
+ * to set `showOnFocus={false}` on the tooltip.
+ */
+
+var TextEditorButton = /*#__PURE__*/function (_Button) {
+  Object(_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(TextEditorButton, _Button);
+
+  function TextEditorButton() {
+    return _Button.apply(this, arguments) || this;
+  }
+
+  var _proto = TextEditorButton.prototype;
+
+  _proto.view = function view(vnode) {
+    var originalView = _Button.prototype.view.call(this, vnode); // Steal tooltip label from the Button superclass
+
+
+    var tooltipText = this.attrs.tooltipText || originalView.attrs.title;
+    delete originalView.attrs.title;
+    return m(flarum_common_components_Tooltip__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      showOnFocus: false,
+      text: tooltipText
+    }, originalView);
+  };
+
+  TextEditorButton.initAttrs = function initAttrs(attrs) {
+    _Button.initAttrs.call(this, attrs);
+
+    attrs.className = 'Button Button--icon Button--link Button-flamoji';
+    attrs.tooltipText = attrs.title;
+  };
+
+  return TextEditorButton;
+}(flarum_common_components_Button__WEBPACK_IMPORTED_MODULE_1___default.a);
+
+
+
+/***/ }),
+
+/***/ "./src/forum/index.js":
+/*!****************************!*\
+  !*** ./src/forum/index.js ***!
+  \****************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! flarum/common/extend */ "flarum/common/extend");
+/* harmony import */ var flarum_common_extend__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var flarum_common_app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! flarum/common/app */ "flarum/common/app");
+/* harmony import */ var flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(flarum_common_app__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _common_utils_getEmojiCategories__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common/utils/getEmojiCategories */ "./src/common/utils/getEmojiCategories.js");
+/* harmony import */ var _components_TextEditorButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/TextEditorButton */ "./src/forum/components/TextEditorButton.js");
+/* harmony import */ var flarum_common_components_TextEditor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! flarum/common/components/TextEditor */ "flarum/common/components/TextEditor");
+/* harmony import */ var flarum_common_components_TextEditor__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(flarum_common_components_TextEditor__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _common_utils_urlChecker__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common/utils/urlChecker */ "./src/common/utils/urlChecker.js");
+
+
+
+
+
+ // Make translation calls shorter
+
+var t = 'the-turk-flamoji.forum.';
+var t_p = t + 'emoji-button.';
+flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('the-turk-flamoji', function () {
+  // localization of the `emoji-button` package
+  var i18n = {
+    search: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans(t_p + 'search_placeholder'),
+    notFound: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans(t_p + 'no_emojis_found_message'),
+    categories: {
+      recents: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans(t_p + 'categories.recents'),
+      smileys: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans(t_p + 'categories.smileys'),
+      people: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans(t_p + 'categories.people'),
+      animals: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans(t_p + 'categories.animals'),
+      food: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans(t_p + 'categories.food'),
+      activities: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans(t_p + 'categories.activities'),
+      travel: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans(t_p + 'categories.travel'),
+      objects: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans(t_p + 'categories.objects'),
+      symbols: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans(t_p + 'categories.symbols'),
+      flags: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans(t_p + 'categories.flags'),
+      custom: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans(t_p + 'categories.custom')
+    }
+  };
+  Object(flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__["extend"])(flarum_common_components_TextEditor__WEBPACK_IMPORTED_MODULE_4___default.a.prototype, 'oncreate', function () {
+    this.flamojiButton = document.querySelector('.Button-flamoji');
+    this.flamojiContainer = document.createElement('div');
+    this.flamojiContainer.classList.add('ComposerBody-flamojiContainer');
+    this.flamojiButton.after(this.flamojiContainer);
+  });
+  Object(flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__["extend"])(flarum_common_components_TextEditor__WEBPACK_IMPORTED_MODULE_4___default.a.prototype, 'oninit', function () {
+    var _this = this;
+
+    this.isPickerLoading = this.isPickerLoaded = false; // https://v4.webpack.js.org/guides/public-path/#on-the-fly
+
+    __webpack_require__.p = flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('baseUrl') + '/assets/extensions/tk-flamoji/dist/'; // dyanmically load translated emoji keyword files
+
+    this.emojiData = function (lang) {
+      _this.isPickerLoading = true;
+      return __webpack_require__("./src/emoji-button-locale-data/dist lazy recursive ^\\.\\/.*$")("./" + lang);
+    };
+  });
+  Object(flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__["extend"])(flarum_common_components_TextEditor__WEBPACK_IMPORTED_MODULE_4___default.a.prototype, 'toolbarItems', function (items) {
+    var _this2 = this;
+
+    items.add('flamoji', _components_TextEditorButton__WEBPACK_IMPORTED_MODULE_3__["default"].component({
+      onclick: function onclick() {
+        if (_this2.isPickerLoading == true) return;
+
+        if (_this2.isPickerLoaded == false) {
+          _this2.emojiData(flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.emoji_data')).then(function (localeData) {
+            flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.request({
+              method: 'GET',
+              url: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('apiUrl') + '/the-turk/emojis'
+            }).then(function (response) {
+              var baseUrl = flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('baseUrl');
+              var specifiedCategories = JSON.parse(flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.specify_categories'));
+              var customCategories = JSON.parse(flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.custom_categories'));
+              var emoji_version = flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.emoji_version'); // so if we don't sort `specifiedCategories` array
+              // based on `sortingArr`, some categories are
+              // obviously not working. It seems like a bug
+              // in the `emoji-button` repository.
+
+              var sortingArr = Object(_common_utils_getEmojiCategories__WEBPACK_IMPORTED_MODULE_2__["default"])();
+              specifiedCategories.sort(function (a, b) {
+                return sortingArr.indexOf(a) - sortingArr.indexOf(b);
+              }); // 为""会导致默认选中报错
+
+              customCategories = customCategories.map(function (c) {
+                return c ? c : "无分类";
+              });
+              var specifiedCategoryCount = specifiedCategories.length;
+              var customEmojis = [];
+              var customEmojiReplacers = {};
+              response['data'].map(function (customEmoji) {
+                var path = customEmoji['attributes']['path'];
+                var categoryName = customEmoji['attributes']['category'] ? customEmoji['attributes']['category'] : "无分类";
+                customEmojiReplacers[path] = customEmoji['attributes']['text_to_replace'];
+
+                if (customCategories.findIndex(function (c) {
+                  return c == categoryName;
+                }) >= 0) {
+                  customEmojis.push({
+                    emoji: Object(_common_utils_urlChecker__WEBPACK_IMPORTED_MODULE_5__["default"])(path) ? path : baseUrl + path,
+                    category: specifiedCategoryCount + customCategories.findIndex(function (c) {
+                      return c == categoryName;
+                    }),
+                    categoryName: categoryName,
+                    name: customEmoji['attributes']['title'],
+                    version: emoji_version,
+                    custom: true
+                  });
+                }
+              }); // 过滤掉不显示的emoji(emoji.category存的是索引)
+
+              var specifiedCategoryIndex = [];
+              specifiedCategories.map(function (s) {
+                if (sortingArr.findIndex(function (sa) {
+                  return sa == s;
+                }) >= 0) {
+                  specifiedCategoryIndex.push(sortingArr.findIndex(function (sa) {
+                    return sa == s;
+                  }));
+                }
+              });
+              var emojiData = {
+                emoji: JSON.parse(JSON.stringify(localeData["default"].emoji.filter(function (e) {
+                  return specifiedCategoryIndex.length != 0 && specifiedCategoryIndex.findIndex(function (s) {
+                    return s == e.category;
+                  }) >= 0;
+                }))),
+                categories: specifiedCategories.concat(customCategories)
+              };
+              emojiData.emoji = emojiData.emoji.map(function (e) {
+                e.category = specifiedCategoryIndex.findIndex(function (s) {
+                  return s == e.category;
+                });
+                return e;
+              });
+              emojiData.emoji = emojiData.emoji.concat(customEmojis);
+              var initialCategory = specifiedCategories.findIndex(function (s) {
+                return s == flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.initial_category');
+              }) >= 0 ? flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.initial_category') : emojiData.categories[0];
+              var icons = {
+                categories: {}
+              };
+              customCategories.map(function (customCategory) {
+                var _customEmojis$find;
+
+                icons.categories[customCategory] = (_customEmojis$find = customEmojis.find(function (c) {
+                  return c.categoryName == customCategory;
+                })) == null ? void 0 : _customEmojis$find.emoji;
+                i18n.categories[customCategory] = customCategory;
+              });
+              __webpack_require__.e(/*! import() | emoji-button */ "vendors~emoji-button").then(__webpack_require__.bind(null, /*! @joeattardi/emoji-button */ "./node_modules/@joeattardi/emoji-button/dist/index.js")).then(function (_ref) {
+                var EmojiButton = _ref.EmojiButton;
+                _this2.picker = new EmojiButton({
+                  theme: 'light',
+                  // based on Flarum's less variables 
+                  autoFocusSearch: false,
+                  rootElement: _this2.flamojiContainer,
+                  style: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.emoji_style'),
+                  recentsCount: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.recents_count'),
+                  showRecents: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.show_recents'),
+                  showVariants: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.show_variants'),
+                  autoHide: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.auto_hide'),
+                  showPreview: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.show_preview'),
+                  showCategoryButtons: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.show_category_buttons'),
+                  showSearch: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.show_search'),
+                  emojiVersion: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.emoji_version'),
+                  initialCategory: initialCategory,
+                  categories: emojiData.categories,
+                  emojiData: emojiData,
+                  icons: icons,
+                  i18n: i18n
+                });
+
+                _this2.picker.on('emoji', function (selection) {
+                  var insert = selection.emoji; // Handle custom emoji.
+                  // Since we can't pass a third argument into EmojiButton's emojiData
+                  // option, we can use an array which stores emoji path as its key and
+                  // its replacer text as its value. We're using emoji paths because
+                  // they tend to be unique.
+
+                  if (!insert) insert = customEmojiReplacers[selection.url.replace(baseUrl, '')];
+
+                  _this2.attrs.composer.editor.insertAtCursor(insert);
+                });
+
+                _this2.isPickerLoaded = true;
+                _this2.isPickerLoading = false;
+                m.redraw();
+
+                _this2.picker.togglePicker(_this2.flamojiButton);
+              });
+            });
+          });
+        } else {
+          _this2.picker.togglePicker(_this2.flamojiButton);
+        }
+      },
+      icon: this.isPickerLoading ? 'fas fa-spinner fa-pulse' : 'far fa-smile-wink',
+      title: flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.translator.trans(t + 'composer.emoji_tooltip')
+    }));
+  });
+  Object(flarum_common_extend__WEBPACK_IMPORTED_MODULE_0__["extend"])(flarum_common_components_TextEditor__WEBPACK_IMPORTED_MODULE_4___default.a.prototype, 'toolbarItems', function (items) {
+    items.has('emoji') ? items.remove('emoji') : '';
+  });
+}, -150 // initialize before flarum/emoji
+);
+
+/***/ }),
+
+/***/ "flarum/common/app":
+/*!***************************************************!*\
+  !*** external "flarum.core.compat['common/app']" ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = flarum.core.compat['common/app'];
+
+/***/ }),
+
+/***/ "flarum/common/components/Button":
+/*!*****************************************************************!*\
+  !*** external "flarum.core.compat['common/components/Button']" ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = flarum.core.compat['common/components/Button'];
+
+/***/ }),
+
+/***/ "flarum/common/components/TextEditor":
+/*!*********************************************************************!*\
+  !*** external "flarum.core.compat['common/components/TextEditor']" ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = flarum.core.compat['common/components/TextEditor'];
+
+/***/ }),
+
+/***/ "flarum/common/components/Tooltip":
+/*!******************************************************************!*\
+  !*** external "flarum.core.compat['common/components/Tooltip']" ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = flarum.core.compat['common/components/Tooltip'];
+
+/***/ }),
+
+/***/ "flarum/common/extend":
+/*!******************************************************!*\
+  !*** external "flarum.core.compat['common/extend']" ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = flarum.core.compat['common/extend'];
+
+/***/ })
+
+/******/ });
 //# sourceMappingURL=forum.js.map

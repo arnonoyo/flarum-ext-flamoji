@@ -1,5 +1,4 @@
 import { extend, override } from 'flarum/common/extend';
-import { availableLocale } from '@roderickhsiao/emoji-button-locale-data';
 
 import app from 'flarum/common/app';
 import AdminPage from 'flarum/admin/components/AdminPage';

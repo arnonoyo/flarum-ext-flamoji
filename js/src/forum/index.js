@@ -49,7 +49,7 @@ app.initializers.add(
       // dyanmically load translated emoji keyword files
       this.emojiData = (lang) => {
         this.isPickerLoading = true;
-        return import(/* webpackChunkName: "emoji-button-message-[request]" */ `@roderickhsiao/emoji-button-locale-data/dist/${lang}`);
+        return import(/* webpackChunkName: "vendors~emoji-button-message-[request]" */ `../emoji-button-locale-data/dist/${lang}`);
       };
     });
 
