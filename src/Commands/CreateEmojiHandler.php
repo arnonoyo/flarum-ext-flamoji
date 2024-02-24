@@ -27,6 +27,8 @@ class CreateEmojiHandler
     public function handle(CreateEmoji $command)
     {
         $actor = $command->actor;
+        $actor->assertAdmin();
+
         $data = $command->data;
 
         $emoji = Emoji::build(

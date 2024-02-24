@@ -9,6 +9,7 @@ use TheTurk\Flamoji\Models\Emoji;
 use Psr\Http\Message\ServerRequestInterface;
 use Tobscure\JsonApi\Document;
 use Illuminate\Support\Arr;
+use Flarum\Http\RequestUtil;
 
 class ListEmojisController extends AbstractListController
 {
@@ -35,6 +36,8 @@ class ListEmojisController extends AbstractListController
      */
     protected function data(ServerRequestInterface $request, Document $document)
     {
+        RequestUtil::getActor($request)->assertRegistered();
+
         $params = $request->getQueryParams();
         $category = Arr::get($params, 'category');
 

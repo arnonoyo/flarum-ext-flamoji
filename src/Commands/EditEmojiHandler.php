@@ -27,6 +27,8 @@ class EditEmojiHandler
     public function handle(EditEmoji $command)
     {
         $actor = $command->actor;
+        $actor->assertAdmin();
+
         $data = $command->data;
 
         $emoji = Emoji::findOrFail($command->emojiId);

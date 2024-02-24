@@ -26,6 +26,8 @@ class DeleteEmojiHandler
     public function handle(DeleteEmoji $command)
     {
         $actor = $command->actor;
+        $actor->assertAdmin();
+
         $emoji = Emoji::findOrFail($command->emojiId);
 
         $this->events->dispatch(

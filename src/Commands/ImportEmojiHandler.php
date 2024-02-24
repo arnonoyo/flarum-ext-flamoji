@@ -27,6 +27,8 @@ class ImportEmojiHandler
     public function handle(ImportEmoji $command)
     {
         $actor = $command->actor;
+        $actor->assertAdmin();
+
         $data = $command->data;
         $emoji = null;
         
