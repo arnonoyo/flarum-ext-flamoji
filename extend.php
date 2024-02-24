@@ -55,7 +55,7 @@ return [
         ->serializeToForum('flamoji.recents_count', 'the-turk-flamoji.recents_count', 'intVal')
         ->serializeToForum('flamoji.specify_categories', 'the-turk-flamoji.specify_categories')
         ->serializeToForum('flamoji.custom_categories', 'the-turk-flamoji.custom_categories', function ($retrievedValue) {
-            $categories = json_decode($retrievedValue);
+            $categories = json_decode($retrievedValue) ?? [];
             $res = [];
             foreach($categories as $key => $value){
                 if($value == 1){
