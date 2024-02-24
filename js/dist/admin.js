@@ -425,7 +425,8 @@ var CustomEmojiSection = /*#__PURE__*/function (_Component) {
         customEmojiList[i] = {
           title: attr.title,
           text_to_replace: attr.text_to_replace,
-          path: attr.path
+          path: attr.path,
+          category: attr.category
         };
       });
       var blob = new Blob([JSON.stringify(customEmojiList)], {
@@ -441,8 +442,7 @@ var CustomEmojiSection = /*#__PURE__*/function (_Component) {
     input.type = 'file';
 
     input.onchange = function (e) {
-      app.customEmojiListState.loading = true; // getting a hold of the file reference
-
+      // getting a hold of the file reference
       var file = e.target.files[0]; // setting up the reader
 
       var reader = new FileReader();

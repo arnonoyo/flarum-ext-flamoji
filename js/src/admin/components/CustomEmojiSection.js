@@ -23,6 +23,7 @@ export default class CustomEmojiSection extends Component {
           title: attr.title,
           text_to_replace: attr.text_to_replace,
           path: attr.path,
+          category: attr.category,
         };
       });
 
@@ -38,8 +39,6 @@ export default class CustomEmojiSection extends Component {
     input.type = 'file';
 
     input.onchange = (e) => {
-      app.customEmojiListState.loading = true;
-
       // getting a hold of the file reference
       var file = e.target.files[0];
 
