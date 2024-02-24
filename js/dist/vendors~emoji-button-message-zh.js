@@ -117,11 +117,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "微笑亲亲",
     "version": "1.0"
   }, {
-    "emoji": "🥲",
-    "category": 0,
-    "name": "含泪的笑脸",
-    "version": "13.0"
-  }, {
     "emoji": "😋",
     "category": 0,
     "name": "好吃",
@@ -311,11 +306,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 0,
     "name": "聚会笑脸",
     "version": "11.0"
-  }, {
-    "emoji": "🥸",
-    "category": 0,
-    "name": "伪装的脸",
-    "version": "13.0"
   }, {
     "emoji": "😎",
     "category": 0,
@@ -803,12 +793,6 @@ __webpack_require__.r(__webpack_exports__);
     "variations": ["👌🏻", "👌🏼", "👌🏽", "👌🏾", "👌🏿"],
     "version": "1.0"
   }, {
-    "emoji": "🤌",
-    "category": 1,
-    "name": "捏手指",
-    "variations": ["🤌🏻", "🤌🏼", "🤌🏽", "🤌🏾", "🤌🏿"],
-    "version": "13.0"
-  }, {
     "emoji": "🤏",
     "category": 1,
     "name": "捏合的手势",
@@ -1020,16 +1004,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 1,
     "name": "脑",
     "version": "5.0"
-  }, {
-    "emoji": "🫀",
-    "category": 1,
-    "name": "心脏器官",
-    "version": "13.0"
-  }, {
-    "emoji": "🫁",
-    "category": 1,
-    "name": "肺",
-    "version": "13.0"
   }, {
     "emoji": "🦷",
     "category": 1,
@@ -1738,12 +1712,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "woman guard",
     "variations": ["💂🏻‍♀️", "💂🏼‍♀️", "💂🏽‍♀️", "💂🏾‍♀️", "💂🏿‍♀️"],
     "version": "4.0"
-  }, {
-    "emoji": "🥷",
-    "category": 1,
-    "name": "忍者",
-    "variations": ["🥷🏻", "🥷🏼", "🥷🏽", "🥷🏾", "🥷🏿"],
-    "version": "13.0"
   }, {
     "emoji": "👷",
     "category": 1,
@@ -2746,11 +2714,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "双人像",
     "version": "1.0"
   }, {
-    "emoji": "🫂",
-    "category": 1,
-    "name": "人的拥抱",
-    "version": "13.0"
-  }, {
     "emoji": "👣",
     "category": 1,
     "name": "脚印",
@@ -2876,11 +2839,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "鹿",
     "version": "3.0"
   }, {
-    "emoji": "🦬",
-    "category": 2,
-    "name": "大野牛",
-    "version": "13.0"
-  }, {
     "emoji": "🐮",
     "category": 2,
     "name": "奶牛头",
@@ -2961,11 +2919,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "大象",
     "version": "1.0"
   }, {
-    "emoji": "🦣",
-    "category": 2,
-    "name": "猛犸",
-    "version": "13.0"
-  }, {
     "emoji": "🦏",
     "category": 2,
     "name": "犀牛",
@@ -3010,11 +2963,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 2,
     "name": "chipmunk",
     "version": "1.0"
-  }, {
-    "emoji": "🦫",
-    "category": 2,
-    "name": "海狸",
-    "version": "13.0"
   }, {
     "emoji": "🦔",
     "category": 2,
@@ -3141,16 +3089,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "猫头鹰",
     "version": "3.0"
   }, {
-    "emoji": "🦤",
-    "category": 2,
-    "name": "渡渡鸟",
-    "version": "13.0"
-  }, {
-    "emoji": "🪶",
-    "category": 2,
-    "name": "羽毛",
-    "version": "13.0"
-  }, {
     "emoji": "🦩",
     "category": 2,
     "name": "火烈鸟",
@@ -3226,11 +3164,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "海豚",
     "version": "1.0"
   }, {
-    "emoji": "🦭",
-    "category": 2,
-    "name": "海豹",
-    "version": "13.0"
-  }, {
     "emoji": "🐟",
     "category": 2,
     "name": "鱼",
@@ -3286,11 +3219,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "蜜蜂",
     "version": "1.0"
   }, {
-    "emoji": "🪲",
-    "category": 2,
-    "name": "甲虫",
-    "version": "13.0"
-  }, {
     "emoji": "🐞",
     "category": 2,
     "name": "瓢虫",
@@ -3300,11 +3228,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 2,
     "name": "蟋蟀",
     "version": "5.0"
-  }, {
-    "emoji": "🪳",
-    "category": 2,
-    "name": "蟑螂",
-    "version": "13.0"
   }, {
     "emoji": "🕷️",
     "category": 2,
@@ -3325,16 +3248,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 2,
     "name": "蚊子",
     "version": "11.0"
-  }, {
-    "emoji": "🪰",
-    "category": 2,
-    "name": "苍蝇",
-    "version": "13.0"
-  }, {
-    "emoji": "🪱",
-    "category": 2,
-    "name": "蠕虫",
-    "version": "13.0"
   }, {
     "emoji": "🦠",
     "category": 2,
@@ -3395,11 +3308,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 2,
     "name": "幼苗",
     "version": "1.0"
-  }, {
-    "emoji": "🪴",
-    "category": 2,
-    "name": "盆栽植物",
-    "version": "13.0"
   }, {
     "emoji": "🌲",
     "category": 2,
@@ -3526,11 +3434,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "草莓",
     "version": "1.0"
   }, {
-    "emoji": "🫐",
-    "category": 3,
-    "name": "蓝莓",
-    "version": "13.0"
-  }, {
     "emoji": "🥝",
     "category": 3,
     "name": "猕猴桃",
@@ -3540,11 +3443,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 3,
     "name": "西红柿",
     "version": "1.0"
-  }, {
-    "emoji": "🫒",
-    "category": 3,
-    "name": "橄榄",
-    "version": "13.0"
   }, {
     "emoji": "🥥",
     "category": 3,
@@ -3580,11 +3478,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 3,
     "name": "hot pepper",
     "version": "1.0"
-  }, {
-    "emoji": "🫑",
-    "category": 3,
-    "name": "灯笼椒",
-    "version": "13.0"
   }, {
     "emoji": "🥒",
     "category": 3,
@@ -3640,11 +3533,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 3,
     "name": "法式长棍面包",
     "version": "3.0"
-  }, {
-    "emoji": "🫓",
-    "category": 3,
-    "name": "扁面包",
-    "version": "13.0"
   }, {
     "emoji": "🥨",
     "category": 3,
@@ -3726,11 +3614,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "墨西哥玉米煎饼",
     "version": "1.0"
   }, {
-    "emoji": "🫔",
-    "category": 3,
-    "name": "墨西哥粽子",
-    "version": "13.0"
-  }, {
     "emoji": "🥙",
     "category": 3,
     "name": "夹心饼",
@@ -3760,11 +3643,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 3,
     "name": "一锅食物",
     "version": "1.0"
-  }, {
-    "emoji": "🫕",
-    "category": 3,
-    "name": "奶酪火锅",
-    "version": "13.0"
   }, {
     "emoji": "🥣",
     "category": 3,
@@ -3991,11 +3869,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "热饮",
     "version": "1.0"
   }, {
-    "emoji": "🫖",
-    "category": 3,
-    "name": "茶壶",
-    "version": "13.0"
-  }, {
     "emoji": "🍵",
     "category": 3,
     "name": "热茶",
@@ -4050,11 +3923,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 3,
     "name": "带吸管杯",
     "version": "5.0"
-  }, {
-    "emoji": "🧋",
-    "category": 3,
-    "name": "珍珠奶茶",
-    "version": "13.0"
   }, {
     "emoji": "🧃",
     "category": 3,
@@ -4200,21 +4068,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 4,
     "name": "砖",
     "version": "11.0"
-  }, {
-    "emoji": "🪨",
-    "category": 4,
-    "name": "岩石",
-    "version": "13.0"
-  }, {
-    "emoji": "🪵",
-    "category": 4,
-    "name": "木头",
-    "version": "13.0"
-  }, {
-    "emoji": "🛖",
-    "category": 4,
-    "name": "小屋",
-    "version": "13.0"
   }, {
     "emoji": "🏘️",
     "category": 4,
@@ -4551,11 +4404,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "运动型多用途车",
     "version": "1.0"
   }, {
-    "emoji": "🛻",
-    "category": 4,
-    "name": "敞蓬小型载货卡车",
-    "version": "13.0"
-  }, {
     "emoji": "🚚",
     "category": 4,
     "name": "货车",
@@ -4615,11 +4463,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 4,
     "name": "滑板",
     "version": "11.0"
-  }, {
-    "emoji": "🛼",
-    "category": 4,
-    "name": "四轮滑冰鞋",
-    "version": "13.0"
   }, {
     "emoji": "🚏",
     "category": 4,
@@ -5471,11 +5314,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "水晶球",
     "version": "1.0"
   }, {
-    "emoji": "🪄",
-    "category": 5,
-    "name": "魔棒",
-    "version": "13.0"
-  }, {
     "emoji": "🧿",
     "category": 5,
     "name": "纳扎尔护身符",
@@ -5510,16 +5348,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 5,
     "name": "泰迪熊",
     "version": "11.0"
-  }, {
-    "emoji": "🪅",
-    "category": 5,
-    "name": "彩罐",
-    "version": "13.0"
-  }, {
-    "emoji": "🪆",
-    "category": 5,
-    "name": "套娃",
-    "version": "13.0"
   }, {
     "emoji": "♠️",
     "category": 5,
@@ -5581,20 +5409,10 @@ __webpack_require__.r(__webpack_exports__);
     "name": "线",
     "version": "11.0"
   }, {
-    "emoji": "🪡",
-    "category": 5,
-    "name": "缝合针",
-    "version": "13.0"
-  }, {
     "emoji": "🧶",
     "category": 5,
     "name": "毛线",
     "version": "11.0"
-  }, {
-    "emoji": "🪢",
-    "category": 5,
-    "name": "结",
-    "version": "13.0"
   }, {
     "emoji": "👓",
     "category": 6,
@@ -5721,11 +5539,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "书包",
     "version": "1.0"
   }, {
-    "emoji": "🩴",
-    "category": 6,
-    "name": "夹趾凉鞋",
-    "version": "13.0"
-  }, {
     "emoji": "👞",
     "category": 6,
     "name": "男鞋",
@@ -5790,11 +5603,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 6,
     "name": "鸭舌帽",
     "version": "5.0"
-  }, {
-    "emoji": "🪖",
-    "category": 6,
-    "name": "军用头盔",
-    "version": "13.0"
   }, {
     "emoji": "⛑️",
     "category": 6,
@@ -5916,11 +5724,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "萨克斯管",
     "version": "1.0"
   }, {
-    "emoji": "🪗",
-    "category": 6,
-    "name": "手风琴",
-    "version": "13.0"
-  }, {
     "emoji": "🎸",
     "category": 6,
     "name": "吉他",
@@ -5950,11 +5753,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 6,
     "name": "鼓",
     "version": "3.0"
-  }, {
-    "emoji": "🪘",
-    "category": 6,
-    "name": "长鼓",
-    "version": "13.0"
   }, {
     "emoji": "📱",
     "category": 6,
@@ -6220,11 +6018,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 6,
     "name": "钱袋",
     "version": "1.0"
-  }, {
-    "emoji": "🪙",
-    "category": 6,
-    "name": "硬币",
-    "version": "13.0"
   }, {
     "emoji": "💴",
     "category": 6,
@@ -6551,11 +6344,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "水枪",
     "version": "1.0"
   }, {
-    "emoji": "🪃",
-    "category": 6,
-    "name": "回旋镖",
-    "version": "13.0"
-  }, {
     "emoji": "🏹",
     "category": 6,
     "name": "弓和箭",
@@ -6566,20 +6354,10 @@ __webpack_require__.r(__webpack_exports__);
     "name": "shield",
     "version": "1.0"
   }, {
-    "emoji": "🪚",
-    "category": 6,
-    "name": "木工锯",
-    "version": "13.0"
-  }, {
     "emoji": "🔧",
     "category": 6,
     "name": "扳手",
     "version": "1.0"
-  }, {
-    "emoji": "🪛",
-    "category": 6,
-    "name": "螺丝刀",
-    "version": "13.0"
   }, {
     "emoji": "🔩",
     "category": 6,
@@ -6616,11 +6394,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "chains",
     "version": "1.0"
   }, {
-    "emoji": "🪝",
-    "category": 6,
-    "name": "挂钩",
-    "version": "13.0"
-  }, {
     "emoji": "🧰",
     "category": 6,
     "name": "工具箱",
@@ -6630,11 +6403,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 6,
     "name": "磁铁",
     "version": "11.0"
-  }, {
-    "emoji": "🪜",
-    "category": 6,
-    "name": "梯子",
-    "version": "13.0"
   }, {
     "emoji": "⚗️",
     "category": 6,
@@ -6701,21 +6469,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "门",
     "version": "1.0"
   }, {
-    "emoji": "🛗",
-    "category": 6,
-    "name": "电梯",
-    "version": "13.0"
-  }, {
-    "emoji": "🪞",
-    "category": 6,
-    "name": "镜子",
-    "version": "13.0"
-  }, {
-    "emoji": "🪟",
-    "category": 6,
-    "name": "窗户",
-    "version": "13.0"
-  }, {
     "emoji": "🛏️",
     "category": 6,
     "name": "bed",
@@ -6736,11 +6489,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "马桶",
     "version": "1.0"
   }, {
-    "emoji": "🪠",
-    "category": 6,
-    "name": "活塞",
-    "version": "13.0"
-  }, {
     "emoji": "🚿",
     "category": 6,
     "name": "淋浴",
@@ -6750,11 +6498,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 6,
     "name": "浴缸",
     "version": "1.0"
-  }, {
-    "emoji": "🪤",
-    "category": 6,
-    "name": "捕鼠器",
-    "version": "13.0"
   }, {
     "emoji": "🪒",
     "category": 6,
@@ -6786,20 +6529,10 @@ __webpack_require__.r(__webpack_exports__);
     "name": "卷纸",
     "version": "11.0"
   }, {
-    "emoji": "🪣",
-    "category": 6,
-    "name": "桶",
-    "version": "13.0"
-  }, {
     "emoji": "🧼",
     "category": 6,
     "name": "皂",
     "version": "11.0"
-  }, {
-    "emoji": "🪥",
-    "category": 6,
-    "name": "牙刷",
-    "version": "13.0"
   }, {
     "emoji": "🧽",
     "category": 6,
@@ -6826,11 +6559,6 @@ __webpack_require__.r(__webpack_exports__);
     "name": "coffin",
     "version": "1.0"
   }, {
-    "emoji": "🪦",
-    "category": 6,
-    "name": "墓碑",
-    "version": "13.0"
-  }, {
     "emoji": "⚱️",
     "category": 6,
     "name": "funeral urn",
@@ -6840,11 +6568,6 @@ __webpack_require__.r(__webpack_exports__);
     "category": 6,
     "name": "摩埃",
     "version": "1.0"
-  }, {
-    "emoji": "🪧",
-    "category": 6,
-    "name": "标语牌",
-    "version": "13.0"
   }, {
     "emoji": "🏧",
     "category": 7,
