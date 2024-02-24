@@ -93,3 +93,4 @@ assets/dist/
 js/node_modules/
 composer.lock
 # package-lock.json
+*.js.map
