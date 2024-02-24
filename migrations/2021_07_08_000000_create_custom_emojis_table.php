@@ -18,6 +18,8 @@ return [
                 $table->string('text_to_replace')->nullable();
                 $table->string('category');
                 $table->string('path');
+
+                $table->unique('text_to_replace');
             }
         );
     },
