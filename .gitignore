@@ -88,7 +88,7 @@ typings/
 .dynamodb/
 
 vendor/
-assets/dist/
+# assets/dist/
 # js/dist/
 js/node_modules/
 composer.lock
