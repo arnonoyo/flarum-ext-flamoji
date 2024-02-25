@@ -159,7 +159,8 @@ app.initializers.add(
                         twemojiOptions: {
                            base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/' 
                         },
-                        i18n
+                        i18n,
+                        emojiSize: '2.5em',
                       });
   
                       this.picker.on('emoji', (selection) => {

@@ -574,7 +574,8 @@ flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('the-t
                   twemojiOptions: {
                     base: 'https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/'
                   },
-                  i18n: i18n
+                  i18n: i18n,
+                  emojiSize: '2.5em'
                 });
 
                 _this2.picker.on('emoji', function (selection) {
