@@ -61,6 +61,12 @@ the-turk-flamoji:
         delete_emoji_button: Delete emoji
         saved_message: => core.admin.settings.saved_message
 
+      edit_emoji_category:
+        modal_title: Emoji Category
+        path_or_url_label: Path or URL
+        submit_button: => core.ref.save_changes
+        saved_message: => core.admin.settings.saved_message
+
       emoji_list:
         load_more_button: => core.forum.post_stream.load_more_button
 

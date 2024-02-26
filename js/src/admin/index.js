@@ -265,9 +265,9 @@ app.initializers.add('the-turk-flamoji', (app) => {
                     <input
                       type="checkbox"
                       name="customCats[]"
-                      checked={this.customCategories[category] == 1}
+                      checked={this.customCategories[category].is_enabled == 1}
                       onchange={(change) => {
-                        this.customCategories[category] = change.target.checked ? 1 : 0;
+                        this.customCategories[category].is_enabled = change.target.checked ? 1 : 0;
                       }}
                     />
                     <label for={category}>{category ? category : "无分类"}</label>

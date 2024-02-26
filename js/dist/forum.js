@@ -474,7 +474,8 @@ flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('the-t
             }).then(function (response) {
               var baseUrl = flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('baseUrl');
               var specifiedCategories = JSON.parse(flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.specify_categories'));
-              var customCategories = JSON.parse(flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.custom_categories'));
+              var originCustomCategories = JSON.parse(flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.custom_categories'));
+              var customCategories = Object.keys(originCustomCategories);
               var emoji_version = flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.forum.attribute('flamoji.emoji_version'); // so if we don't sort `specifiedCategories` array
               // based on `sortingArr`, some categories are
               // obviously not working. It seems like a bug
@@ -544,9 +545,9 @@ flarum_common_app__WEBPACK_IMPORTED_MODULE_1___default.a.initializers.add('the-t
                 categories: {}
               };
               customCategories.map(function (customCategory) {
-                var _customEmojis$find;
+                var _originCustomCategori, _customEmojis$find;
 
-                icons.categories[customCategory] = (_customEmojis$find = customEmojis.find(function (c) {
+                icons.categories[customCategory] = (_originCustomCategori = originCustomCategories[customCategory]) != null && _originCustomCategori.path && originCustomCategories[customCategory].path.trim() != "" ? originCustomCategories[customCategory].path : (_customEmojis$find = customEmojis.find(function (c) {
                   return c.categoryName == customCategory;
                 })) == null ? void 0 : _customEmojis$find.emoji;
                 i18n.categories[customCategory] = customCategory;

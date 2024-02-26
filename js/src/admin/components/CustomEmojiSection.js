@@ -3,6 +3,7 @@ import Button from 'flarum/common/components/Button';
 import Component from 'flarum/common/Component';
 import CustomEmojiList from './CustomEmojiList';
 import EditEmojiModal from './EditEmojiModal';
+import EditEmojiCategoryModal from './EditEmojiCategoryModal';
 import listItems from 'flarum/common/helpers/listItems';
 import ItemList from 'flarum/common/utils/ItemList';
 
@@ -102,7 +103,14 @@ export default class CustomEmojiSection extends Component {
           this.categories.map((category) => {
             return (
               <div className="container">
-                <h2>{category ? category : "无分类"}</h2>
+                <h2>{category ? category : "无分类"}&nbsp;&nbsp;
+                {category ? 
+                  <Button
+                    className="Button Button--icon customEmoji-editButton"
+                    icon="fas fa-pencil-alt"
+                    onclick={() => app.modal.show(EditEmojiCategoryModal, { model: category })}
+                  />: ""}
+                </h2>
                 <CustomEmojiList 
                   category = {category}/>
               </div>

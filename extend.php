@@ -58,8 +58,10 @@ return [
             $categories = json_decode($retrievedValue) ?? [];
             $res = [];
             foreach($categories as $key => $value){
-                if($value == 1){
-                    $res[] = $key;
+                if($value->is_enabled == 1){
+                    $res[$key] = [
+                        'path'  => $value->path
+                    ];
                 }
             }
             return json_encode($res);

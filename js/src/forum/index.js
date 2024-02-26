@@ -71,7 +71,8 @@ app.initializers.add(
                     const baseUrl = app.forum.attribute('baseUrl');
 
                     let specifiedCategories = JSON.parse(app.forum.attribute('flamoji.specify_categories'));
-                    let customCategories = JSON.parse(app.forum.attribute('flamoji.custom_categories'));
+                    let originCustomCategories = JSON.parse(app.forum.attribute('flamoji.custom_categories'));
+                    let customCategories = Object.keys(originCustomCategories);
                     let emoji_version = app.forum.attribute('flamoji.emoji_version');
 
                     // so if we don't sort `specifiedCategories` array
@@ -134,7 +135,9 @@ app.initializers.add(
                       categories : {}
                     };
                     customCategories.map(customCategory => {
-                      icons.categories[customCategory] = customEmojis.find(c => c.categoryName == customCategory)?.emoji;
+                      icons.categories[customCategory] = originCustomCategories[customCategory]?.path && originCustomCategories[customCategory].path.trim() != "" ? 
+                        originCustomCategories[customCategory].path : 
+                        customEmojis.find(c => c.categoryName == customCategory)?.emoji;
                       i18n.categories[customCategory] = customCategory;
                     })
 

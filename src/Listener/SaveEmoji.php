@@ -55,12 +55,15 @@ class SaveEmoji
     {
         $key = "the-turk-flamoji.custom_categories";
         $categories = $this->emojis->getCategory();
-        $custom_categories = (array) $this->settings->get($key, []);
+        $custom_categories = json_decode($this->settings->get($key, []));
 
         $data = [];
         foreach ($categories as $category) 
         {
-            $data[$category] = isset($custom_categories[$category]) ? $custom_categories[$category] : 0;
+            $data[$category] = isset($custom_categories->$category) ? $custom_categories->$category : [
+                'is_enabled' => 0,
+                'path'       => ''
+            ];;
         }
 
         $this->settings->set($key, json_encode($data));
