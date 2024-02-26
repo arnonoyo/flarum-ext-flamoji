@@ -1,48 +1,42 @@
-# Flamoji
+# flarum-ext-flamoji
 
-[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/the-turk/flarum-flamoji/blob/master/LICENSE) [![Latest Stable Version](https://img.shields.io/packagist/v/the-turk/flarum-flamoji.svg)](https://packagist.org/packages/the-turk/flarum-flamoji) [![Total Downloads](https://img.shields.io/packagist/dt/the-turk/flarum-flamoji.svg)](https://packagist.org/packages/the-turk/flarum-flamoji)
+[![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/the-turk/flarum-flamoji/blob/master/LICENSE)
 
-Simple emoji manager for Flarum.
+> 基于`the-turk/flarum-flamoji`魔改，与原扩展冲突，安装前需卸载原扩展（原emoji配置数据可提前备份&导出）  
+> 暂只支持从源码库安装
 
-Screenshots:
-
-![Picker](https://i.imgur.com/I7l1s6O.png)
-
-- [Settings](https://i.imgur.com/hqlbvZB.png)
-- [Edit Emoji Modal](https://i.imgur.com/nonfIjB.png)
+以下两项仅列出与原扩展中较大的差异，具体差异请对比[代码变更](https://github.com/the-turk/flarum-flamoji/compare/main...arnonoyo:flarum-ext-flamoji:main)
 
 ## Features
 
-- Based on [joeattardi/emoji-button](https://github.com/joeattardi/emoji-button) repository.
-- Add an emoji picker to the text editor (compatible with dark mode).
-- Show Twemoji or unicode emojis in the picker.
-- Search emojis in your own language.
-- Add custom emojis to the picker.
-- Import and export custom emoji configurations.
-- Everything is dynamically loaded (no CDNs) when the picker is opened (there should be no performance impact until the user interacts with the picker).
+- 自定义表情包支持分类显示`Custom categories`
+- 只保留zh，移除emoji-button-locale-data依赖
+  - `js/src/emoji-button-locale-data/zh.js`
+- 只支持14.0.2版本twemoji
+  - 原`twemoji.maxcdn.com`地址失效，替换为`cdn.jsdelivr.net`
+  - 暂移除部分显示为方块的emoji
+- `custom_emojis`表`text_to_replace`新增唯一索引
+- 为解决自定义分类排序错乱的问题，依赖包[picmo](https://github.com/arnonoyo/picmo)为forked后修改的
+
+## Fixes
+
+- `Specify categories`设置不显示但emoji还是显示了
+- `Initial category`对应`Specify categories`分类设置不显示时报错
+- 相关接口越权行为
+- 删除`map.js`
 
 ## Installation
 
+先在`composer.json`中添加`repositories`源，再执行以下命令
 ```bash
-composer require the-turk/flarum-flamoji
+composer require tk/flarum-ext-flamoji
 ```
 
 ## Updating
 
 ```bash
-composer update the-turk/flarum-flamoji
+composer update tk/flarum-ext-flamoji
 php flarum migrate
 php flarum assets:publish
 php flarum cache:clear
 ```
-
-### Import and Export Configurations
-
-I added these features so we can share our custom emoji configurations. Just use the "Export JSON" button from the extension's settings page to export your configuration and "Import JSON" button to import others. However, importing action will only import the configuration, not the image files. You still need to upload those images manually into your server.
-
-## Links
-
-- [Source code on GitHub](https://github.com/the-turk/flarum-flamoji)
-- [Changelog](https://github.com/the-turk/blob/master/CHANGELOG.md)
-- [Report an issue](https://github.com/the-turk/flarum-flamoji/issues)
-- [Download via Packagist](https://packagist.org/packages/the-turk/flarum-flamoji)
